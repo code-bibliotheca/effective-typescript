@@ -26,8 +26,10 @@ tsc --noImplicitAny program.ts
 
 [내가 사용하는 tsconfig.json](https://github.com/code-bibliotheca/effective-typescript/issues/2)
 
-### 요약
+<hr>
+
+## 요약
 
 1. 자바스크립트 프로젝트를 타입스크립트로 전환하는 것이 아니라면 `noImplicitAny`, `strictNullChecks`를 설정하기
 
-- 타입스크립트에서 엄격한 검사를 하고 싶다면 strict 설정을 고려
+2. 타입스크립트에서 엄격한 검사를 하고 싶다면 strict 설정을 고려
