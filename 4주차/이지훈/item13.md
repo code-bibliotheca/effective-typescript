@@ -95,7 +95,7 @@ interface IStateWithPop extends TState {
 type TStateWithPop = IState & { population: number }; //intersection type
 ```
 
-> 주의: 인터페이스는 유니온 타입같은 복잡한 타입을 확장하지 못합니다. 따라서 복잡한 타입을 확장하고 싶다면 타입과 &를 활용
+> 주의: 인터페이스는 유니온 타입같은 복잡한 타입을 확장하지 못함. 따라서 복잡한 타입을 확장하고 싶다면 타입과 &를 활용
 > <br/>
 
 ## 타입과 인터페이스의 차이점
@@ -138,7 +138,7 @@ type TState = {
 };
 ```
 
-- 선언 병합(declaration merging) : 속성을 확장
+- 선언 병합(declaration merging) : 같은 이름의 인터페이스, 타입, 클래스, 함수, 모듈 등이 여러 곳에서 선언되었을 때 타입스크립트가 이를 하나로 병합하여 처리하는 기능
 
 <br/>
 
