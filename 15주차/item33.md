@@ -83,8 +83,10 @@ function plunk<T, K extends keyof T>(records: Array<T>, key: K): Array<T[K]> {
 
 ```ts
 const albums: Album[] = [
+    {artist: '지훈', title: '사막에서 꽃을 피우듯', releaseDate: new Date(2023, 7, 13), recordingType: 'studio'},
     {artist: '세영', title: 'Hype Boy', releaseDate: new Date(2022, 7, 1), recordingType: 'studio'},
-    {artist: '유정', title: 'Baddie', releaseDate: new Date(2023, 9, 13), recordingType: 'studio'}
+    {artist: '유정', title: 'Baddie', releaseDate: new Date(2023, 9, 13), recordingType: 'studio'},
+    {artist: '지현', title: '이름에게', releaseDate: new Date(2017, 3, 21), recordingType: 'live'},
 ]
 
 plunk(albums, 'releaseDate');   // type Date[]
