@@ -82,6 +82,11 @@ function plunk<T, K extends keyof T>(records: Array<T>, key: K): Array<T[K]> {
 위의 함수를 통해 배열로부터 원하는 특정 필드의 값을 추출할 수 있고, 잘못된 속성 값이 들어온 경우 타입 에러를 통해 확인할 수 있다!!!
 
 ```ts
+const albums: Album[] = [
+    {artist: '세영', title: 'Hype Boy', releaseDate: new Date(2022, 7, 1), recordingType: 'studio'},
+    {artist: '유정', title: 'Baddie', releaseDate: new Date(2023, 9, 13), recordingType: 'studio'}
+]
+
 plunk(albums, 'releaseDate');   // type Date[]
 plunk(albums, 'artist');        // type string
 plunk(albums, 'recordingType'); // type RecordingType[]
