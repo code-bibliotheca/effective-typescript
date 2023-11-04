@@ -97,7 +97,7 @@ type Person = Name | PersonWithBirth;
 // fetched data
 const data1 = {
     name: "유정",
-    dateOfBirth: new Date(new Date(1993, 10 - 1, 26)),
+    dateOfBirth: new Date(new Date(1994, 10 - 1, 26)),
     placeOfBirth: "안동"
 }
 
