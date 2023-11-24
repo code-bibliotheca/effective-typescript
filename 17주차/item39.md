@@ -51,3 +51,9 @@ function hasTwelveLetterKey(o: object) {
   return false;
 }
 ```
+
+음... 형식이 정해지지 않은 데이터에 대해 타입을 지정할 때 배열인지 객체인지, return 타입 정도는 줄여달라는 말을 하고싶은 것 같다.
+
+> any[] : 배열임을 명시
+> { [id: string]: any } : 객체임을 명시
+> () => any : 함수 명시
